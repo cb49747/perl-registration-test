@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="bootstrap / ajax / json / jquery test">
+    <meta name="author" content="Christopher Burger">
+
+    <title>Hello World Registration Script</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="[% template_path %]main/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/my.css" rel="stylesheet">
+ 
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="register.pl">My Hello World Registration Script</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    
+     <div class="jumbotron">
+      <div class="container" id="myBlockForm">
+        <h1>My Hello World Registration Script</h1>
+        <p>
+		Please register below.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Please Register</h2>
+          <p>
+          <form method="POST" onSubmit="return isReady(this)">
+            	<div id="firstname-group" class="form-group">
+	            	<label for="firstname">First Name</label>
+					<input type="text" placeholder="First Name" class="form-control" name="firstname">
+            	</div>
+				<div id="lastname-group" class="form-group">
+					<label for="lastname">Last Name</label>
+					<input type="text" placeholder="Last Name" class="form-control" name="lastname">
+            	</div>
+            	<div id="address1-group" class="form-group">
+	            	<label for="address1">Address 1</label>
+					<input type="text" placeholder="Address 1" class="form-control" name="address1">
+            	</div>
+				<div id="address2-group" class="form-group">
+					<label for="address2">Address 2</label>
+					<input type="text" placeholder="Address 2" class="form-control" name="address2">
+            	</div>
+            	<div id="city-group" class="form-group">
+	            	<label for="city">City</label>
+					<input type="text" placeholder="City" class="form-control" name="city">
+            	</div>
+				<div id="state-group" class="form-group">
+					<label for="state">State</label>
+					<input type="text" placeholder="State" class="form-control" name="state">
+            	</div>
+            	<div id="zip-group" class="form-group">
+	            	<label for="zip">Zip Code</label>
+					<input type="text" placeholder="Zip Code" class="form-control" name="zip">
+            	</div>
+				<div id="country-group" class="form-group">
+					<label for="country">Country</label>
+					<select class="form-control" name="country"><option value=US>United States</option></select>
+            	</div>
+            <button type="submit" class="btn btn-success">Submit My Registration</button>
+          </form>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2></h2>
+          <p></p>
+       </div>
+        <div class="col-md-4">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="[% template_path %]main/bootstrap/js/bootstrap.min.js"></script>
+    <script src="[% template_path %]main/js/my.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="[% template_path %]main/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
